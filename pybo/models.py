@@ -105,3 +105,6 @@ class Gomin_Answer(db.Model):
                         nullable=False)
     user = db.relationship('User', backref=db.backref('gomin_answer_set'))
     modify_date = db.Column(db.DateTime(), nullable=True)
+
+class Answer2(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
